@@ -20,12 +20,12 @@ gem 'jquery-rails'
 gem 'mongo_mapper'
 gem 'bson_ext'
 
-gem 'devise', 
-    :git => 'git://github.com/plataformatec/devise.git'
-gem 'mm-devise',              '>= 1.2'
+gem 'devise', '~> 1.5.0'
+gem 'mm-devise','>= 1.2'
 
 gem "omniauth"
 gem "omniauth-github"
+gem "omniauth-identity"
 
 
 gem "simple_form", :git => 'git://github.com/plataformatec/simple_form.git'

@@ -1,5 +1,11 @@
 class User
   include MongoMapper::Document
+  include OmniAuth::Identity::Models::MongoMapper
+  
+  key :email, String
+  key :name, String
+  key :password_digest, String
+  
   # Include default devise modules. Others available are:
   # :token_authenticatable, :encryptable, :confirmable, :lockable, :timeoutable and :omniauthable
   devise :omniauthable
